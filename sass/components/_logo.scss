@@ -1,0 +1,33 @@
+/*
+.logo{
+ display: inlin-block;
+ font-weight: 700;
+ font-family: var(--font-family-secondary);
+ text-decoration: none;
+ font-size: 26px;
+ line-height: 1.19;
+ width: 145px;
+ padding-top: 24px;
+ padding-bottom: 25px;
+ margin-right: 93px;
+ color: var(--color-black);
+}
+.blue-logo{
+ color: var(--color-blue);
+} 
+*/
+
+// Загальний стіль лого
+
+.logo {
+    font-family: var(--font-family-secondary);
+    @include font (700, 24px, 1.16);
+    text-decoration: none;
+    color: var(--color-black); 
+} 
+.blue-logo{
+    color: var(--color-blue);
+} 
+@media screen and (min-width: 1200px) {
+      @include font (700, 26px, 1.19);
+}

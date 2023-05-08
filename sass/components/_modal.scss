@@ -1,0 +1,48 @@
+.modal-box {
+    height: 581px;
+    width: 528px;
+    border-radius: 4px;
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 40px 39px 40px 40px;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.main-button-open {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    fill: var(--color-black);
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    padding: 0;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    outline: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--color-white);
+        fill: var(--color-blue);
+    }
+}
+.icon-modal-close {
+    width: 11px;
+    height: 11px;
+}
